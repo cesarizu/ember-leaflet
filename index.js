@@ -55,7 +55,7 @@ module.exports = {
 
  treeForAddonTemplates: function treeForAddonTemplates (tree) {
     var checker = new VersionChecker(this);
-    var dep = checker.for('ember', 'bower');
+    var dep = checker.forEmber();
 
     var baseTemplatesPath = path.join(this.root, 'addon/templates');
 
